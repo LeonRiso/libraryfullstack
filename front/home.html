@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biblioteca</title>
+</head>
+
+
+<body>
+    <div class="institute">
+        <h1>BIBLIOTECA</h1>
+    </div>
+    <header>
+        <form id="cadastro">
+            <div class="rotulos">
+                <div>
+                    <label for="idlivro">ID</label>
+                    <input type="text" name="idlivro" id="id" required />
+                </div>
+                <div>
+                    <label for="titulolivro">TITULO</label>
+                    <input type="text" name="titulolivro" id="titulo" required />
+                </div>
+                <div>
+                    <label for="autorlivro">AUTOR</label>
+                    <input type="text" name="autorlivro" id="autor" required />
+                </div>
+                <div>
+                    <label for="dataemprliv">DATA EMPRESTIMO</label>
+                    <input type="date" name="dataemprliv" id="DataEmprest" required />
+                </div>
+                <div>
+                    <label for="dataprevliv">DATA PREVISTA</label>
+                    <input type="date" name="dataprevliv" id="DataPrevDev" required />
+                </div>
+                <div>
+                    <label for="nome">NOME</label>
+                    <input type="text" name="nome" id="NomeUser" required />
+                </div>
+                <div>
+                    <label for="cpfliv">CPF</label>
+                    <input type="text" name="cpfliv" id="cpf"  required/>
+                </div>
+                <div>
+                    <label for="acao">Ação</label>
+                </div>
+            </div>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITULO</th>
+                    <th>AUTOR</th>
+                    <th>DATA EMPRESTIMO</th>
+                    <th>DATA DE DEVOLUCAO</th>
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>ACAO</th>
+                </tr>
+            </thead>
+            <tbody id="corpo"></tbody>
+        </table>
+    </main>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
